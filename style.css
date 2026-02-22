@@ -675,3 +675,145 @@ body {
 section[id] {
     scroll-margin-top: 80px;
 }
+
+
+/* ========================================
+   Additional Styles
+   ======================================== */
+
+/* Language Switch */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--bg-tertiary);
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.lang-btn.active {
+    background: var(--accent-green);
+    color: #fff;
+}
+
+.lang-btn:hover:not(.active) {
+    color: var(--text-primary);
+}
+
+.lang-divider {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+/* Education Badge */
+.education-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, rgba(163, 113, 247, 0.1), rgba(88, 166, 255, 0.1));
+    border: 1px solid var(--accent-purple);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 0.875rem;
+    color: var(--accent-purple);
+}
+
+.edu-icon {
+    font-size: 1.25rem;
+}
+
+/* Trading Section */
+.trading {
+    padding: 120px 0;
+    background: var(--bg-primary);
+}
+
+.trading-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-top: 60px;
+}
+
+.trading-card {
+    padding: 40px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.trading-card:hover {
+    border-color: var(--accent-purple);
+    transform: translateY(-4px);
+}
+
+.trading-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.trading-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    color: var(--accent-blue);
+}
+
+.trading-card p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.trading-features {
+    list-style: none;
+}
+
+.trading-features li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+}
+
+.trading-features li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-green);
+}
+
+/* Mobile Responsive for new elements */
+@media (max-width: 768px) {
+    .trading-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .lang-switch {
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
