@@ -4,256 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>boyindaseoul | Copy Trading</title>
-    <meta name="description" content="Professional crypto copy trading service on Binance, BingX, and OKX">
-    <meta name="keywords" content="copy trading, crypto, Binance, BingX, OKX, boyindaseoul, quantitative trading, ICT trading">
-    <meta name="author" content="boyindaseoul">
+    <meta name="description" content="Professional crypto copy trading - Quant & ICT Trading">
     <link rel="canonical" href="https://boyindaseoul.com/">
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://boyindaseoul.com/">
-    <meta property="og:title" content="boyindaseoul | Copy Trading">
-    <meta property="og:description" content="Professional crypto copy trading service on Binance, BingX, and OKX">
-    <meta property="og:site_name" content="boyindaseoul">
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="boyindaseoul | Copy Trading">
-    <meta name="twitter:description" content="Professional crypto copy trading service on Binance, BingX, and OKX">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navbar -->
     <nav class="navbar">
-        <div class="container nav-container">
-            <a href="https://boyindaseoul.com" class="logo">boyindaseoul</a>
-            <ul class="nav-links">
-                <li><a href="#about" data-i18n="nav.about">소개</a></li>
-                <li><a href="#trading" data-i18n="nav.trading">트레이딩</a></li>
-                <li><a href="#platforms" data-i18n="nav.platforms">플랫폼</a></li>
-                <li><a href="#features" data-i18n="nav.features">특징</a></li>
-                <li><a href="#contact" data-i18n="nav.contact">연락처</a></li>
+        <div class="nav-container">
+            <a href="#" class="logo">boyindaseoul</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about"><span data-i18n="nav.about">소개</span></a></li>
+                <li><a href="#trading"><span data-i18n="nav.trading">트레이딩</span></a></li>
+                <li><a href="#platforms"><span data-i18n="nav.platforms">플랫폼</span></a></li>
+                <li><a href="#contact"><span data-i18n="nav.contact">연락</span></a></li>
             </ul>
-            <div class="nav-right">
-                <div class="lang-switch">
-                    <button class="lang-btn active" data-lang="ko">한</button>
-                    <span class="lang-divider">/</span>
-                    <button class="lang-btn" data-lang="en">EN</button>
-                </div>
-                <button class="mobile-menu-btn" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle">EN</button>
+                <button class="mobile-menu" id="mobileMenu">
+                    <span></span><span></span><span></span>
                 </button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <span class="badge" data-i18n="hero.badge">카피트레이딩 서비스</span>
-                <h1 data-i18n="hero.title">프로페셔널 암호화폐<br><span class="highlight">카피트레이딩</span></h1>
-                <p class="hero-desc" data-i18n="hero.desc">
-                    바이낸스, 빙엑스, OKX에서 자동으로 내 거래를 따라하세요.
-                    투명한 성과, 전문적인 리스크 관리.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#platforms" class="btn btn-primary" data-i18n="hero.cta">시작하기</a>
-                    <a href="#about" class="btn btn-outline" data-i18n="hero.learn">더 알아보기</a>
-                </div>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-card">
-                    <span class="stat-value">3+</span>
-                    <span class="stat-label" data-i18n="hero.stat1">플랫폼</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-value">24/7</span>
-                    <span class="stat-label" data-i18n="hero.stat2">모니터링</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-value">Pro</span>
-                    <span class="stat-label" data-i18n="hero.stat3">리스크 관리</span>
-                </div>
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge" data-i18n="hero.badge">Copy Trading</div>
+            <h1 data-i18n="hero.title">퀀트 트레이더<br><span class="gradient-text">boyindaseoul</span></h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">데이터 기반 퀀트 매매와 ICT 트레이딩으로<br>체계적인 투자를 제공합니다</p>
+            <div class="hero-cta">
+                <a href="#platforms" class="btn btn-primary" data-i18n="hero.cta">카피트레이딩 시작</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- About -->
+    <section id="about" class="section about">
         <div class="container">
-            <h2 class="section-title" data-i18n="about.title">소개</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>boyindaseoul</h3>
-                    <div class="education-badge">
+            <div class="about-grid">
+                <div class="about-info">
+                    <span class="section-label" data-i18n="about.label">ABOUT</span>
+                    <h2 class="section-title" data-i18n="about.title">트레이더 소개</h2>
+                    <div class="about-edu">
                         <span class="edu-icon">🎓</span>
-                        <span data-i18n="about.education">한양대학교 (서울) 경영학 · 정보시스템학</span>
+                        <span data-i18n="about.edu">한양대학교 경영학 · 정보시스템학</span>
                     </div>
-                    <p data-i18n="about.desc">
-                        퀀트 매매와 ICT 트레이딩을 전문으로 하는 암호화폐 트레이더입니다.
-                        체계적인 접근 방식과 엄격한 리스크 관리를 통해
-                        다양한 거래소에서 투명한 카피트레이딩 서비스를 제공합니다.
+                    <p class="about-desc" data-i18n="about.desc">
+                        퀀트 매매와 ICT 트레이딩을 전문으로 합니다. 
+                        수학적 모델과 시장 구조 분석을 결합하여 
+                        일관된 트레이딩 시스템을 운용합니다.
                     </p>
-                    <ul class="about-list">
-                        <li data-i18n="about.item1">퀀트 매매 & ICT 트레이딩 전문</li>
-                        <li data-i18n="about.item2">리스크 관리 우선</li>
-                        <li data-i18n="about.item3">투명한 실시간 성과 추적</li>
-                        <li data-i18n="about.item4">다중 거래소 지원</li>
-                    </ul>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-num">3+</span>
+                            <span class="stat-label" data-i18n="about.stat1">거래소</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">24/7</span>
+                            <span class="stat-label" data-i18n="about.stat2">모니터링</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">Quant</span>
+                            <span class="stat-label" data-i18n="about.stat3">기반 전략</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-highlights">
-                    <div class="highlight-card">
-                        <div class="highlight-icon">📊</div>
-                        <h4 data-i18n="about.card1.title">퀀트 매매</h4>
-                        <p data-i18n="about.card1.desc">데이터 기반 전략</p>
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <div class="visual-icon">📈</div>
+                        <h3 data-i18n="about.card1.title">퀀트 매매</h3>
+                        <p data-i18n="about.card1.desc">알고리즘 기반 시스템 트레이딩</p>
                     </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">🎯</div>
-                        <h4 data-i18n="about.card2.title">ICT 트레이딩</h4>
-                        <p data-i18n="about.card2.desc">스마트 머니 컨셉</p>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-icon">🛡️</div>
-                        <h4 data-i18n="about.card3.title">안전</h4>
-                        <p data-i18n="about.card3.desc">전문적 리스크 통제</p>
+                    <div class="visual-card">
+                        <div class="visual-icon">🎯</div>
+                        <h3 data-i18n="about.card2.title">ICT 트레이딩</h3>
+                        <p data-i18n="about.card2.desc">스마트 머니 컨셉 분석</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trading Style Section -->
-    <section id="trading" class="trading">
+    <!-- Trading -->
+    <section id="trading" class="section trading">
         <div class="container">
+            <span class="section-label" data-i18n="trading.label">TRADING STYLE</span>
             <h2 class="section-title" data-i18n="trading.title">트레이딩 스타일</h2>
-            <div class="trading-grid">
+            
+            <div class="trading-cards">
                 <div class="trading-card">
-                    <div class="trading-icon">📊</div>
-                    <h3 data-i18n="trading.quant.title">퀀트 매매 (Quantitative Trading)</h3>
-                    <p data-i18n="trading.quant.desc">
-                        수학적 모델과 통계적 분석을 기반으로 한 체계적인 트레이딩.
-                        감정을 배제하고 데이터에 기반한 의사결정으로 일관된 수익을 추구합니다.
-                    </p>
-                    <ul class="trading-features">
-                        <li data-i18n="trading.quant.f1">알고리즘 기반 진입/청산</li>
-                        <li data-i18n="trading.quant.f2">백테스팅 검증 전략</li>
-                        <li data-i18n="trading.quant.f3">멀티 타임프레임 분석</li>
-                    </ul>
+                    <div class="card-header quant">
+                        <span class="card-icon">📊</span>
+                        <h3>Quantitative Trading</h3>
+                    </div>
+                    <div class="card-body">
+                        <p data-i18n="trading.quant.desc">
+                            수학적 모델과 통계 분석을 활용한 시스템 트레이딩입니다.
+                            백테스팅을 거친 전략으로 감정을 배제한 매매를 수행합니다.
+                        </p>
+                        <ul class="card-features">
+                            <li data-i18n="trading.quant.f1">알고리즘 진입/청산</li>
+                            <li data-i18n="trading.quant.f2">멀티 타임프레임 분석</li>
+                            <li data-i18n="trading.quant.f3">리스크 관리 자동화</li>
+                        </ul>
+                    </div>
                 </div>
+                
                 <div class="trading-card">
-                    <div class="trading-icon">🎯</div>
-                    <h3 data-i18n="trading.ict.title">ICT 트레이딩</h3>
-                    <p data-i18n="trading.ict.desc">
-                        Inner Circle Trader 컨셉을 활용한 프라이스 액션 트레이딩.
-                        시장 구조, 유동성, 오더 블록을 분석하여 스마트 머니의 흐름을 따라갑니다.
-                    </p>
-                    <ul class="trading-features">
-                        <li data-i18n="trading.ict.f1">시장 구조 분석</li>
-                        <li data-i18n="trading.ict.f2">유동성 스윕 포착</li>
-                        <li data-i18n="trading.ict.f3">오더 블록 식별</li>
-                    </ul>
+                    <div class="card-header ict">
+                        <span class="card-icon">🎯</span>
+                        <h3>ICT Trading</h3>
+                    </div>
+                    <div class="card-body">
+                        <p data-i18n="trading.ict.desc">
+                            Inner Circle Trader 방법론을 활용한 프라이스 액션 분석입니다.
+                            시장 구조와 유동성을 중심으로 스마트 머니의 흐름을 추적합니다.
+                        </p>
+                        <ul class="card-features">
+                            <li data-i18n="trading.ict.f1">시장 구조 전환 포착</li>
+                            <li data-i18n="trading.ict.f2">오더블록 분석</li>
+                            <li data-i18n="trading.ict.f3">유동성 스윕 식별</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Platforms Section -->
-    <section id="platforms" class="platforms">
+    <!-- Platforms -->
+    <section id="platforms" class="section platforms">
         <div class="container">
-            <h2 class="section-title" data-i18n="platforms.title">이용 가능한 플랫폼</h2>
-            <p class="section-desc" data-i18n="platforms.desc">원하는 거래소에서 내 거래를 카피하세요</p>
+            <span class="section-label" data-i18n="platforms.label">PLATFORMS</span>
+            <h2 class="section-title" data-i18n="platforms.title">카피트레이딩 플랫폼</h2>
+            <p class="section-desc" data-i18n="platforms.desc">아래 거래소에서 boyindaseoul을 검색하세요</p>
+            
             <div class="platforms-grid">
                 <div class="platform-card">
-                    <div class="platform-logo">
-                        <svg viewBox="0 0 126 126" fill="currentColor" class="exchange-icon">
-                            <path d="M63 0L78.5 15.5L63 31L47.5 15.5L63 0ZM31 31L47.5 47.5L31 63L15.5 47.5L31 31ZM95 31L110.5 47.5L95 63L79.5 47.5L95 31ZM63 31L79.5 47.5L63 63L47.5 47.5L63 31ZM63 63L78.5 78.5L63 94L47.5 78.5L63 63ZM31 95L47.5 111.5L31 126L15.5 111.5L31 95ZM95 95L110.5 111.5L95 126L79.5 111.5L95 95ZM63 95L79.5 111.5L63 126L47.5 111.5L63 95Z"/>
-                        </svg>
-                    </div>
-                    <h3>Binance</h3>
-                    <p data-i18n="platforms.binance">세계 최대 암호화폐 거래소</p>
-                    <span class="platform-status active" data-i18n="platforms.active">활성</span>
+                    <div class="platform-name">Binance</div>
+                    <div class="platform-type" data-i18n="platforms.binance">세계 최대 거래소</div>
+                    <div class="platform-status active" data-i18n="platforms.active">활성</div>
                 </div>
                 <div class="platform-card">
-                    <div class="platform-logo">
-                        <svg viewBox="0 0 24 24" fill="currentColor" class="exchange-icon">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                        </svg>
-                    </div>
-                    <h3>BingX</h3>
-                    <p data-i18n="platforms.bingx">선도적인 카피트레이딩 플랫폼</p>
-                    <span class="platform-status active" data-i18n="platforms.active">활성</span>
+                    <div class="platform-name">BingX</div>
+                    <div class="platform-type" data-i18n="platforms.bingx">카피트레이딩 플랫폼</div>
+                    <div class="platform-status active" data-i18n="platforms.active">활성</div>
                 </div>
                 <div class="platform-card">
-                    <div class="platform-logo">
-                        <svg viewBox="0 0 24 24" fill="currentColor" class="exchange-icon">
-                            <circle cx="12" cy="12" r="10"/>
-                        </svg>
-                    </div>
-                    <h3>OKX</h3>
-                    <p data-i18n="platforms.okx">글로벌 암호화폐 거래소</p>
-                    <span class="platform-status active" data-i18n="platforms.active">활성</span>
-                </div>
-            </div>
-            <div class="cta-box">
-                <h3 data-i18n="platforms.cta.title">시작할 준비 되셨나요?</h3>
-                <p data-i18n="platforms.cta.desc">플랫폼을 선택하고 <strong>boyindaseoul</strong>을 검색하여 카피트레이딩을 시작하세요.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title" data-i18n="features.title">왜 카피트레이딩인가요?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-number">01</div>
-                    <h3 data-i18n="features.f1.title">패시브 인컴</h3>
-                    <p data-i18n="features.f1.desc">전문 트레이더가 대신 작업합니다. 24/7 시장 모니터링 불필요.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-number">02</div>
-                    <h3 data-i18n="features.f2.title">완전한 통제</h3>
-                    <p data-i18n="features.f2.desc">투자 금액을 직접 결정하세요. 언제든지 원클릭으로 중단 가능.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-number">03</div>
-                    <h3 data-i18n="features.f3.title">투명성</h3>
-                    <p data-i18n="features.f3.desc">모든 거래가 공개됩니다. 거래소에서 실시간 성과 추적 가능.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-number">04</div>
-                    <h3 data-i18n="features.f4.title">낮은 진입 장벽</h3>
-                    <p data-i18n="features.f4.desc">최소 투자금으로 시작 가능. 대부분의 플랫폼에서 최소 요구사항 없음.</p>
+                    <div class="platform-name">OKX</div>
+                    <div class="platform-type" data-i18n="platforms.okx">글로벌 거래소</div>
+                    <div class="platform-status active" data-i18n="platforms.active">활성</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Contact -->
+    <section id="contact" class="section contact">
         <div class="container">
+            <span class="section-label" data-i18n="contact.label">CONTACT</span>
             <h2 class="section-title" data-i18n="contact.title">연락처</h2>
-            <div class="contact-content">
-                <p data-i18n="contact.desc">질문이 있으신가요? 언제든지 연락주세요.</p>
-                <div class="contact-links">
-                    <a href="#" class="contact-link">
-                        <span class="contact-icon">📧</span>
-                        <span>Email</span>
-                    </a>
-                    <a href="#" class="contact-link">
-                        <span class="contact-icon">💬</span>
-                        <span>Telegram</span>
-                    </a>
-                    <a href="#" class="contact-link">
-                        <span class="contact-icon">🐦</span>
-                        <span>Twitter</span>
-                    </a>
-                </div>
+            
+            <div class="contact-links">
+                <a href="#" class="contact-link">
+                    <span class="link-icon">📧</span>
+                    <span>Email</span>
+                </a>
+                <a href="#" class="contact-link">
+                    <span class="link-icon">💬</span>
+                    <span>Telegram</span>
+                </a>
+                <a href="#" class="contact-link">
+                    <span class="link-icon">𝕏</span>
+                    <span>Twitter</span>
+                </a>
             </div>
         </div>
     </section>
@@ -262,22 +191,10 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo">boyindaseoul</span>
-                    <p data-i18n="footer.tagline">프로페셔널 카피트레이딩</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#about" data-i18n="nav.about">소개</a>
-                    <a href="#trading" data-i18n="nav.trading">트레이딩</a>
-                    <a href="#platforms" data-i18n="nav.platforms">플랫폼</a>
-                    <a href="#features" data-i18n="nav.features">특징</a>
-                    <a href="#contact" data-i18n="nav.contact">연락처</a>
-                </div>
+                <span class="logo">boyindaseoul</span>
+                <p class="footer-disclaimer" data-i18n="footer.disclaimer">투자에는 위험이 따릅니다. 과거 수익률이 미래 수익을 보장하지 않습니다.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 boyindaseoul.com. All rights reserved.</p>
-                <p class="disclaimer" data-i18n="footer.disclaimer">트레이딩은 위험을 수반합니다. 과거의 성과가 미래의 결과를 보장하지 않습니다.</p>
-            </div>
+            <p class="footer-copy">&copy; 2026 boyindaseoul</p>
         </div>
     </footer>
 
